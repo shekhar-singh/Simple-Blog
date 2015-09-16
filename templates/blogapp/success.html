@@ -1,0 +1,39 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="{% static "css/blog.css" %}">
+
+    <link href="http://fonts.googleapis.com/css?family=fantasy&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      
+</head>
+<body>
+	<div class="page-header">
+	<h1><a href='/'>Blog</a></h1>
+
+
+
+
+	<h3> 
+		
+	    <a href="/profile_view/" class="btn btn-primary">View Profile</a>
+		 &nbsp&nbsp&nbsp
+		<a href="/logout/" class="btn btn-danger">Log Out</a>
+		
+
+	</h3>
+
+</div>
+{% block content %}
+
+<h2>You are successfully login</h2>
+{%  endblock %}
+</body>
+</html>

@@ -1,0 +1,48 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="{% static "css/blog.css" %}">
+
+    <link href="http://fonts.googleapis.com/css?family=fantasy&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      
+</head>
+<body>
+	<div class="page-header">
+	<h1><a href='/'>Blog</a></h1>
+
+<a href="/register/" class="btn btn-primary">Register</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="/login/" class="btn btn-primary btn">Login</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+
+<a href="/admin/" class="btn btn-primary btn-lg">Admin Login</a>
+
+
+
+
+
+	
+		
+</div>
+	{% block content %}
+	<h1 > Welcome!!!  </h1>
+	<div class="jumbotron">
+  <h1>Posts</h1>
+  <p>This is a simple Blog hosting website for writing your own blogs and show it to your friends and also view what they are writing..</p>
+  <p><a href="/post/list/" class="btn btn-primary btn-lg">Read more</a></p>
+</div>
+	<br>
+	<h2> 
+	</h2>
+
+	
+
+    {% endblock %}
+
+</body>
+</html>
